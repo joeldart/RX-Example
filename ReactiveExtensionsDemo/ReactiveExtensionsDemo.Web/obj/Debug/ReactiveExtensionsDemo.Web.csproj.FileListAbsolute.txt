@@ -1,0 +1,5 @@
+c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.dll
+c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.pdb
+c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ResolveAssemblyReference.cache
+c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.dll
+c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.pdb
