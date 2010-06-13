@@ -1,0 +1,4 @@
+This is a VS2010 SL4 project.  I used MS Test for the example test, but I believe the code could be used anywhere.
+
+One thing you'll need to download RX from http://msdn.microsoft.com/en-us/devlabs/ee794896.aspx in order for 
+the references to work.  
