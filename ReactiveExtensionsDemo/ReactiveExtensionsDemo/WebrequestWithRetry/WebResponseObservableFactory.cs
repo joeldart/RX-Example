@@ -17,7 +17,7 @@ namespace ReactiveExtensionsDemo
         public IObservable<WebResponse> GetObservable()
         {
             //jdart is the name of my machine: this is the same as localhost, but it works through fiddler
-            var wr = HttpWebRequest.CreateHttp("http://jdart/examplerestservice/service1");
+            var wr = HttpWebRequest.CreateHttp("http://localhost/examplerestservice/service1");
             wr.AllowReadStreamBuffering = true;
             return Observable.FromAsyncPattern<WebResponse>(wr.BeginGetResponse, wr.EndGetResponse)();
         }

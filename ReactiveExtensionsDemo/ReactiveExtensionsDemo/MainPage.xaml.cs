@@ -22,7 +22,7 @@ namespace ReactiveExtensionsDemo
             SubscribeToDrag();
             SubscribeToKonami();
             SubscribeToTranslation();
- }
+        }
 
         private void SubscribeToDrag()
         {
@@ -95,8 +95,10 @@ namespace ReactiveExtensionsDemo
              * explanation as well as see how nice this looks in JavaScript, go to http://codebetter.com/blogs/matthew.podwysocki/archive/2010/03/11/introduction-to-the-reactive-extensions-for-javascript-composing-callbacks.aspx
              */
             if (appId == null)
-                throw new NotImplementedException("You must go get your own appid from http://www.microsofttranslator.com/dev/");
-
+            {
+                MessageBox.Show("To view the full translation demo, you must go get your own appid from http://www.microsofttranslator.com/dev/ currently using dummy data (check out readme.txt)");
+                UseLocal = true;
+            }
             var textChanged = from e in Observable.FromEvent<TextChangedEventArgs>(TheTextBox, "TextChanged")
                                         .Throttle(TimeSpan.FromSeconds(.25))
                                         .ObserveOnDispatcher()
@@ -112,14 +114,33 @@ namespace ReactiveExtensionsDemo
             });
         }
 
-        private IObservable<string> detect(string text)
+        private bool UseLocal = false;
+        private string GetDetectUri(string text)
         {
-            var subject = new AsyncSubject<string>();
-            string detectUri = "http://api.microsofttranslator.com/v2/Http.svc/Detect?appId=" + appId + "&text=" + HttpUtility.HtmlEncode(text);
+            string detectUri = "http://api.microsofttranslator.com/v2/Http.svc/Detect?appId={0}&text={1}";
             //Okay, bit of an explanation here: I didn't have internet connectivity in the room, so there's a wcf service
             //which gives mostly incorrect translations (once again no internet).  if you need to demo without internet,
             //feel free to use it as a substitute
-            //string detectUri = "http://localhost/examplerestservice/service1/detect/" + HttpUtility.HtmlEncode(text);
+            if(UseLocal)
+                detectUri = "http://localhost/examplerestservice/service1/detect/{1}" + HttpUtility.HtmlEncode(text);
+            return detectUri;
+        }
+        private string GetTranslateUri(string text, string from, string to)
+        {
+            string detectUri = "http://api.microsofttranslator.com/v2/Http.svc/Translate?appId={0}&text={1}&from={2}&to={3}";
+
+            //Okay, bit of an explanation here: I didn't have internet connectivity in the room, so there's a wcf service
+            //which gives mostly incorrect translations (once again no internet).  if you need to demo without internet,
+            //feel free to use it as a substitute
+            if (UseLocal)
+                detectUri = "http://localhost/examplerestservice/service1/translate/{2}/es/{1}";
+            return detectUri;
+        }
+
+        private IObservable<string> detect(string text)
+        {
+            var subject = new AsyncSubject<string>();
+            string detectUri = String.Format(GetDetectUri(text), appId, HttpUtility.HtmlEncode(text));
             
             var wc = new WebClient();
             wc.OpenReadCompleted += new OpenReadCompletedEventHandler((obj, args) =>
@@ -144,12 +165,8 @@ namespace ReactiveExtensionsDemo
 
         private IObservable<string> Translate(string text, string from, string to)
         {
-            string detectUri = "http://api.microsofttranslator.com/v2/Http.svc/Translate?appId=" + appId +
-                "&text=" + text + "&from=" + from + "&to=" + to;
-            //Okay, bit of an explanation here: I didn't have internet connectivity in the room, so there's a wcf service
-            //which gives mostly incorrect translations (once again no internet).  if you need to demo without internet,
-            //feel free to use it as a substitute
-            //string detectUri = "http://localhost/examplerestservice/service1/translate/"+ from + "/es/" + text;
+            string detectUri = String.Format(GetTranslateUri(text, from, to), appId, text, from, to);
+            
             var subject = new AsyncSubject<string>();
             var wc = new WebClient();
             wc.OpenReadCompleted += new OpenReadCompletedEventHandler((obj, args) =>
@@ -171,6 +188,5 @@ namespace ReactiveExtensionsDemo
             wc.OpenReadAsync(new Uri(detectUri));
             return subject;
         }
-    
     }
 }

@@ -86,7 +86,7 @@ namespace WCFRestService
                         return "hola";
                     }
                     else
-                        return "hola... world(I'm sorry i don't know spanish)";
+                        return "hola mundo";
                 }
                 if (en2.Contains(text.ToLower()))
                 {
@@ -100,7 +100,7 @@ namespace WCFRestService
                 }
 
             }
-            return "I started this service at 5:45, give me a break!";
+            return text + "? I started this service at 5:45, give me a break!";
         }
     }
 }

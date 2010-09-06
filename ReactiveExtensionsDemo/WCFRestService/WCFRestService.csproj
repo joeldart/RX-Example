@@ -13,6 +13,7 @@
     <RootNamespace>WCFRestService</RootNamespace>
     <AssemblyName>WCFRestService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{0B76D949-2384-4EC1-BFD7-2DEFDAF22769}|..\ReactiveExtensionsDemo\ReactiveExtensionsDemo.csproj|ClientBin|False,{46D9094E-E045-4D79-8DE9-8411685BF3D2}|..\SilverlightTest1\SilverlightTest1.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,7 +53,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientBin\ReactiveExtensionsDemo.xap" />
+    <Content Include="ClientBin\SilverlightTest1.xap" />
     <Content Include="Global.asax" />
+    <Content Include="ReactiveExtensionsDemoTestPage.aspx" />
+    <Content Include="ReactiveExtensionsDemoTestPage.html" />
+    <Content Include="Silverlight.js" />
+    <Content Include="SilverlightTest1TestPage.aspx" />
+    <Content Include="SilverlightTest1TestPage.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,7 +88,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51011</DevelopmentServerPort>
+          <DevelopmentServerPort>50675</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
