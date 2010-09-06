@@ -585,66 +585,6 @@
             Converts a Begin/End invoke function pair into a asynchronous function.
             </summary>
         </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``4(System.Func{``0,``1,``2,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``3})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``5(System.Func{``0,``1,``2,``3,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``4})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``6(System.Func{``0,``1,``2,``3,``4,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``5})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``7(System.Func{``0,``1,``2,``3,``4,``5,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``6})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``8(System.Func{``0,``1,``2,``3,``4,``5,``6,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``7})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``9(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``8})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``10(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``9})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``11(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``10})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``12(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``11})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``13(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``12})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``14(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``13})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.FromAsyncPattern``15(System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,``14})">
-            <summary>
-            Converts a Begin/End invoke function pair into a asynchronous function.
-            </summary>
-        </member>
         <member name="M:System.Linq.Observable.ToAsync``1(System.Func{``0})">
             <summary>
             Converts the function into an asynchronous function.
@@ -808,36 +748,6 @@
         <member name="M:System.Linq.Observable.Publish``2(System.IObservable{``0},System.Func{System.IObservable{``0},System.IObservable{``1}},System.Concurrency.IScheduler)">
             <summary>
             Returns an observable sequence that is the result of invoking the selector on a connectable observable sequence that shares a single subscription to the underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``3(System.IObservable{``0},System.IObservable{``1},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2}})">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``3(System.IObservable{``0},System.IObservable{``1},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2}},System.Concurrency.IScheduler)">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``4(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3}})">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``4(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3}},System.Concurrency.IScheduler)">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``5(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.IObservable{``4}})">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
-            </summary>
-        </member>
-        <member name="M:System.Linq.Observable.Publish``5(System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.Func{System.IObservable{``0},System.IObservable{``1},System.IObservable{``2},System.IObservable{``3},System.IObservable{``4}},System.Concurrency.IScheduler)">
-            <summary>
-            Returns an observable sequence that is the result of invoking the selector on connectable observable sequences that share a single subscription to each underlying source.
             </summary>
         </member>
         <member name="M:System.Linq.Observable.Prune``1(System.IObservable{``0})">
@@ -2120,6 +2030,11 @@
         <member name="M:System.Windows.Threading.DispatcherObservableExtensions.SubscribeOn``1(System.IObservable{``0},System.Windows.Threading.Dispatcher)">
             <summary>
             Asynchronously subscribes and unsubscribes observers using the dispatcher.
+            </summary>
+        </member>
+        <member name="T:System.Threading.Tasks.TaskObservableExtensions">
+            <summary>
+            Provides a set of static methods for converting Tasks to IObservables.
             </summary>
         </member>
     </members>

@@ -3,8 +3,8 @@ c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\Reac
 c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ResolveAssemblyReference.cache
 c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.dll
 c:\users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.pdb
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.dll
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.pdb
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.dll
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.pdb
+C:\Documents and Settings\Joel\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.dll
+C:\Documents and Settings\Joel\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\bin\ReactiveExtensionsDemo.Web.pdb
+C:\Documents and Settings\Joel\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Joel\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.dll
+C:\Documents and Settings\Joel\RX-Example\ReactiveExtensionsDemo\ReactiveExtensionsDemo.Web\obj\Debug\ReactiveExtensionsDemo.Web.pdb

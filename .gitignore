@@ -9,7 +9,7 @@ Tests.VisualState.xml
 *.exe
 *.dll
 *.pdb
-*.cache
+*.xap*.cache
 *.suo
 *.orig
 *.user

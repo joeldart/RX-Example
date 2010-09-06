@@ -3,8 +3,3 @@ C:\Users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\WCFR
 C:\Users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\WCFRestService\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\WCFRestService\obj\Debug\WCFRestService.dll
 C:\Users\jdart\documents\visual studio 2010\Projects\ReactiveExtensionsDemo\WCFRestService\obj\Debug\WCFRestService.pdb
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\WCFRestService\bin\WCFRestService.dll
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\WCFRestService\bin\WCFRestService.pdb
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\WCFRestService\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\WCFRestService\obj\Debug\WCFRestService.dll
-C:\Users\jdart.DYKNOW\RX-Example\ReactiveExtensionsDemo\WCFRestService\obj\Debug\WCFRestService.pdb
